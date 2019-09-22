@@ -1,0 +1,76 @@
+@import '../../variables.scss';
+
+.footer{
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  background: $primaryBlack;
+  padding: 7rem 0 0 0;
+  text-align: center;
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover &-svg{
+      fill: #fff;
+    }
+  }
+  &__logo-svg{
+    width: 100px;
+    height: 100px;
+    fill: $primaryRed;
+    transition: all 1s;
+  }
+  &__logo-text{
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-left: .5rem;
+    position: relative;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 0%;
+      border-bottom: 3px solid $primaryRed;
+
+    }
+    &:hover::after{
+      animation: 1s xD forwards;
+    }
+
+  }
+  &__text{
+    margin-top: 3rem;
+  }
+
+  &__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__socials-item{
+    margin: 1rem;
+  }
+  &__icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .4s;
+    opacity: .7;
+    &:hover{
+      color: $primaryRed;
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+
+  &__copyright{
+    text-align: center;
+    padding: 1rem 0;
+    background: #000;;
+    color: #fff;
+    font-size: .7rem;
+  }
+
+}

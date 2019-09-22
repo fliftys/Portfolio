@@ -1,0 +1,45 @@
+/* ------------------------------------------- */
+/* GLOBAL */
+/* ------------------------------------------- */
+*,*::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 100%;
+  line-height: 1.5;
+}
+body{
+  box-sizing: border-box;
+  font-family: "Rubik","Arial",sans-serif;
+  color: #5e5e5e;
+  overflow-x: hidden;
+  
+
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+
+
+
+/* ------------------------------------------- */
+/* Utility classess */
+/* ------------------------------------------- */
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+  // border: 1px solid green;
+  
+}
+

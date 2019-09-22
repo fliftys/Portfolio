@@ -1,0 +1,111 @@
+@import '../../variables.scss';
+
+.about{
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+
+  }
+
+  // TOP
+  &__title{}
+  &__description{}
+
+
+  // BOTTOM - content
+  &__main{
+    margin: 6rem auto;
+  }
+  &__content{
+    
+
+  }
+
+
+  &__technologies{
+    // border: 1px solid red;
+    color: $gray1;
+    // color: $gray3;
+
+    text-align: center;
+  }
+  &__heading{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: $primaryRed;
+  }
+  &__secondaryDescription{
+    font-size: 1.4rem;
+  }
+  &__card{
+    padding: 1rem;
+    // background: rgb(241, 241, 241);
+    // background: #fff;
+    // background: #f6f6f6;
+    background: $gray3;
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    margin: 2.5rem 5rem;
+  
+    &:hover .about__secondaryTitle{
+      color: $primaryRed;
+    }
+
+  }
+
+  &__secondaryTitle{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $primaryBlack;
+    transition: all .4s;
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__list-item{
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover > *{
+      transform: translate(0);
+      color: $testRed;
+    }
+  
+  }
+
+  &__list-item--locked{
+    opacity: .2;
+    transition: all .3s;
+    &:hover{
+      opacity: 0;
+      cursor: none;
+    }
+  }
+
+  &__img{
+    width: 5.65rem;
+    // height: 5.65rem;
+    display: block;
+    transform: translateY(-5px);
+    transition: all .4s;
+  }
+  &__name{
+    text-align: center;
+    font-weight: 700;
+    color: $primaryBlack;
+    margin: .5rem 0;
+    transform: translateY(5px);
+    transition: all .4s;
+  }
+
+}

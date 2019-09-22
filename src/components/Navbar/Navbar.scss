@@ -1,0 +1,167 @@
+@import '../../variables.scss';
+
+.header{
+  background: $primaryBlack;
+  overflow: hidden;
+  &__wrapper{
+    animation: fromBottom 2s forwards; 
+    
+  }
+
+  // TOP
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+
+    &:hover &-svg{
+      fill: #fff;
+    }
+  }
+  &__logo-svg{
+    width: 50px;
+    height: 50px;
+    fill: $primaryRed;
+    transition: all 1s; 
+  }
+  &__logo-text{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-left: .5rem;
+    position: relative;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 0%;
+      border-bottom: 3px solid $primaryRed;
+
+    }
+    &:hover::after{
+      animation: 1s xD forwards;
+    }
+
+  }
+
+
+  &__hamburger{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover{
+      color: $primaryRed;
+    }
+
+  }
+  
+
+
+  // BOTTOM
+  &__bottom{
+
+  }
+  &__nav{}
+  &__menu{
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  &__menu--show{
+    height: 240px;
+  }
+  
+  &__menu-item{}
+  &__link{
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: $gray1;
+    transition: all .4s;
+
+    &:hover{
+      color: #fff;
+    }
+
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      border-bottom: 5px solid $primaryRed;
+    }
+    &:hover::after{
+      animation: xD2 .6s forwards;
+    }
+    
+  }
+
+  @media(min-width: 810px){
+
+    &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__menu{
+      display: flex;
+      height: auto;
+    }
+    &__hamburger{
+      display: none;
+    }
+  }
+
+}
+.active{
+  &::after{
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@keyframes xD{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes xD2{
+  0%{
+    left: 50%;
+    width: 0%;
+  }
+  100%{
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@keyframes fromBottom{
+  0%{
+    transform: translateY(-100px);
+
+  }
+  80%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

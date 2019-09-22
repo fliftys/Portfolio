@@ -1,0 +1,83 @@
+@import '../../variables.scss';
+
+.start{
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(200px);
+    opacity: 0;
+    animation: startFromBottom 2s forwards;
+    animation-delay: 1s;
+  }
+
+  &__title{
+    
+    animation-delay: 2s;
+
+  }
+  &__avatar{
+    margin-top: 2rem;
+    transform: translateX(150vw);
+    animation: avatarFromRight 1s forwards;
+    animation-delay: 1s;
+    width: 10rem;
+    
+  }
+  &__avatar-img{
+    border-radius: 50%;
+    border: 3px solid $primaryRed;
+  }
+
+  &__btn{
+    outline: none;
+    margin-top: 1rem;
+    border: none;
+    color: #fff;
+    background: $primaryRed;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid $primaryRed;
+    transition: all .5s;
+
+
+    &:hover{
+      color: $primaryRed;
+      background-color: transparent;
+      transform: scale(1.05) translateY(-5px);
+    }
+    &:active{
+      transform: scale(1) translateY(-1px);
+    }
+  }
+
+}
+
+@keyframes startFromBottom{
+  0%{
+    transform: translateY(200px);
+    opacity: 0;
+
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes avatarFromRight{
+  0%{
+    transform: translateX(150vw);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
