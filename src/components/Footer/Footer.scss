@@ -73,4 +73,8 @@
     font-size: .7rem;
   }
 
+  @media(max-width: 710px){
+    clip-path: none;
+  }
+
 }

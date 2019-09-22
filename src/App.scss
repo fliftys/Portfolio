@@ -10,14 +10,16 @@
 html{
   font-size: 100%;
   line-height: 1.5;
+
+  @media(max-width: 710px){
+    font-size: 90%;
+  }
 }
 body{
   box-sizing: border-box;
   font-family: "Rubik","Arial",sans-serif;
   color: #5e5e5e;
   overflow-x: hidden;
-  
-
 }
 a{
   text-decoration: none;
@@ -42,4 +44,6 @@ img{
   // border: 1px solid green;
   
 }
-
+.wrapper{
+  padding: 1rem;
+}

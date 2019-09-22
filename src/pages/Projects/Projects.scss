@@ -1,0 +1,158 @@
+@import '../../variables.scss';
+
+.projects{
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__main{
+    min-height: 100vh;
+  }
+
+  &__sort{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    
+  }
+
+  &__input{
+    display: none;
+  }
+
+  &__btn{
+    width: 10rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem .5rem;
+    border: 2px solid $primaryRed;
+    color: #fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .4s;
+    &:hover{
+      background: $primaryRed;
+
+    }
+  }
+
+  &__btn--small{
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    svg{
+      font-size: 1.5rem;
+      margin-left: .5rem;
+      color: $primaryRed;
+      transition: all .4s;
+    }
+    &:hover svg{
+      color: #fff;
+    }
+  }
+
+  &__btn--active{
+    background: $primaryRed;
+    transition: all .4s;
+  }
+
+  &__gallery{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 1rem;
+    // border: 1px solid red;
+    padding: 1rem;
+  }
+
+  &__gallery-item{
+    border: 2px solid $gray2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    // box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    animation: itemFromBottom 1s forwards;
+
+    &:hover .projects__back{
+      height: 100%;
+    }
+  }
+  @keyframes itemFromBottom{
+    0%{
+      transform: translateY(5rem);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
+
+  &__img{
+
+  }
+  &__back{
+    position: absolute;
+    overflow: hidden;
+    bottom:0;
+    left:0;
+    height: 0%;
+    width: 100%;
+    background: $secondaryBlack;
+    transition: 1s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(max-width: 800px){
+    &__gallery{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media(max-width: 690px){
+    &__gallery{
+      grid-template-columns: 1fr;
+    }
+
+    &__gallery-item{
+
+      &:hover .projects__back{
+        height: auto;
+      }
+    }
+
+    &__back{
+
+      bottom:0;
+      left:0;
+      height: auto;
+      width: 100%;
+      background: $secondaryBlack;
+      transition: 1s all;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+  }
+
+}
+
+

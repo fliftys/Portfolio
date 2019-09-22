@@ -108,4 +108,11 @@
     transition: all .4s;
   }
 
+
+  @media(max-width: 800px){
+    &__list{
+      justify-content: center;
+
+    }
+  }
 }
