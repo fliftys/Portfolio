@@ -4,6 +4,7 @@ import challenge32 from './img/projects/challenge32.png';
 import challenge11 from './img/projects/challenge11.png';
 import memoryApp from './img/projects/memoryapp.png';
 import polind from './img/projects/polind.png';
+import portfolio from './img/projects/portfolio.png';
 
 
 export const projects = [
@@ -52,6 +53,7 @@ export const projects = [
     urlNetlify: 'https://objective-galileo-bf6935.netlify.com/',
     img: challenge11
   },
+  
   {
     id: 5,
     name: 'Polind',
@@ -59,6 +61,15 @@ export const projects = [
     urlGithub: 'https://github.com/fliftys/Polind-PSD-to-html',
     urlNetlify: 'https://fervent-thompson-aaa707.netlify.com/',
     img: polind
+  },  
+  {
+    id: 6,
+    name: 'Portfolio',
+    type: 'react',
+    urlGithub: 'https://google.com',
+    urlNetlify: '/',
+    img: portfolio
   },
+
 
 ]
