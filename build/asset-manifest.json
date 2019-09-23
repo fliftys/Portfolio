@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d01159b.chunk.css",
+    "main.js": "/static/js/main.07b06d2b.chunk.js",
+    "main.js.map": "/static/js/main.07b06d2b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7302273d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7302273d.js.map",
+    "static/js/2.8e63abeb.chunk.js": "/static/js/2.8e63abeb.chunk.js",
+    "static/js/2.8e63abeb.chunk.js.map": "/static/js/2.8e63abeb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.260083c01945aee90a984b36564529f8.js": "/precache-manifest.260083c01945aee90a984b36564529f8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6d01159b.chunk.css.map": "/static/css/main.6d01159b.chunk.css.map",
+    "static/media/avatar.svg": "/static/media/avatar.50b6764a.svg",
+    "static/media/bikeshop.png": "/static/media/bikeshop.a43ad4e4.png",
+    "static/media/challenge11.png": "/static/media/challenge11.82daceeb.png",
+    "static/media/challenge32.png": "/static/media/challenge32.9180a50b.png",
+    "static/media/photoshop.png": "/static/media/photoshop.020e80ec.png",
+    "static/media/polind.png": "/static/media/polind.b489aba1.png",
+    "static/media/react.png": "/static/media/react.8d859602.png",
+    "static/media/sass.png": "/static/media/sass.c13c393f.png",
+    "static/media/vs.png": "/static/media/vs.92357ff8.png"
+  }
+}
