@@ -57,6 +57,24 @@
     }
   }
 
+  @media(max-width: 832px){
+    &__title{
+      font-size: 2rem;
+    }
+  }
+
+  @media(max-width: 447px){
+    &__title{
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width: 320px){
+    &__title{
+      font-size: 1.3rem;
+    }
+  }
+
+
 }
 
 @keyframes startFromBottom{

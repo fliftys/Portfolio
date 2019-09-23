@@ -128,10 +128,12 @@
   @media(max-width: 690px){
     &__gallery{
       grid-template-columns: 1fr;
+      border: 1px solid transparent;
     }
 
     &__gallery-item{
-
+      max-width: 21rem;
+      margin: 0 auto;
       &:hover .projects__back{
         height: auto;
       }

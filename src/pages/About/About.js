@@ -82,7 +82,7 @@ const About = () => {
             </div>
 
             <div className="about__card">
-              <h2 className="about__secondaryTitle">javascript</h2>
+              <h2 className="about__secondaryTitle">js</h2>
               <ul className="about__list">
                 <li className="about__list-item">
                   <img src={imgJS} alt="img" className="about__img" />

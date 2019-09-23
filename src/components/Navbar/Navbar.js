@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
-import diamond from "../../img/diamond.svg";
 import { FaAlignRight } from "react-icons/fa";
 
 class Navbar extends Component {

@@ -20,6 +20,7 @@ const Projects = ({ value }) => {
             href={urlNetlify}
             className="projects__btn projects__btn--small"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Podgląd
             <FaTv />
@@ -28,6 +29,7 @@ const Projects = ({ value }) => {
             href={urlGithub}
             className="projects__btn projects__btn--small"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Kod
             <FaGithub />
@@ -45,7 +47,7 @@ const Projects = ({ value }) => {
           <Description
             name="projects__description"
             content="Poniżej znajduje się lista wyselekcjonowanych stron internetowych, które stworzyłem wraz z kodem źródłowym oraz podglądem na platformie netlify.
-            Dokładniejszy opis projeku i użytych technologii znajduje się w podlinkowanym repozytorium na githubie."
+            Dokładniejszy opis poszczególnych projektów i użytych technologii znajduje się w podlinkowanym repozytorium na githubie."
           />
         </div>
       </Showcase>

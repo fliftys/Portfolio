@@ -8,16 +8,14 @@ import portfolio from './img/projects/portfolio.png';
 
 
 export const projects = [
-
   {
     id: 0,
-    name: 'Bikeshop',
+    name: 'Portfolio',
     type: 'react',
-    urlGithub: 'https://github.com/fliftys/React-BikeShop',
-    urlNetlify: 'https://serene-wright-c7a405.netlify.com/',
-    img: bikeshop
+    urlGithub: 'https://google.com',
+    urlNetlify: '/',
+    img: portfolio
   },
-  
   {
     id: 1,
     name: 'Pizzeria',
@@ -64,12 +62,12 @@ export const projects = [
   },  
   {
     id: 6,
-    name: 'Portfolio',
+    name: 'Bikeshop',
     type: 'react',
-    urlGithub: 'https://google.com',
-    urlNetlify: '/',
-    img: portfolio
-  },
+    urlGithub: 'https://github.com/fliftys/React-BikeShop',
+    urlNetlify: 'https://serene-wright-c7a405.netlify.com/',
+    img: bikeshop
+  }
 
 
 ]

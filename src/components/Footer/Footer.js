@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaEnvelope, FaGithubSquare, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -17,12 +17,12 @@ const Footer = () => {
 
         <ul className="footer__socials">
           <li className="footer__socials-item">
-            <a href="mailto:elo123@gmail.com">
+            <a href="mailto:jnowak2137@gmail.com" rel="noopener noreferrer">
               <FaEnvelope className="footer__icon" />
             </a>
           </li>
           <li className="footer__socials-item">
-            <a href="https://github.com/fliftys" target="_blank">
+            <a href="https://github.com/fliftys" target="_blank" rel="noopener noreferrer">
               <FaGithub className="footer__icon" />
             </a>
           </li>
