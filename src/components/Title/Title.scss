@@ -6,14 +6,16 @@
   font-size: 3.5rem;
   margin-top: 2rem;
   transform: translateX(-150vw);
-  animation: 2s titleFromLeft forwards;
+  animation: 1.5s titleFromLeft forwards;
+
   
   &::after{
     content: '';
     display: block;
     border: 2px solid $primaryRed;
     width: 75%;
-    animation: 2s titleFromLeft forwards;
+    transform: translateX(-150vw);
+    animation: 1.5s titleFromLeft forwards;
     animation-delay: .5s;
   }
 

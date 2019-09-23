@@ -5,8 +5,24 @@
   overflow: hidden;
   &__wrapper{
     animation: fromBottom 2s forwards; 
+    animation-delay: 3s;
+    transform: translateY(-100px);
     
   }
+
+  @keyframes fromBottom{
+    0%{
+      transform: translateY(-100px);
+  
+    }
+    80%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
 
   // TOP
   &__top{
@@ -154,15 +170,4 @@
   }
 }
 
-@keyframes fromBottom{
-  0%{
-    transform: translateY(-100px);
 
-  }
-  80%{
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}

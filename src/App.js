@@ -13,12 +13,13 @@ import Footer from "./components/Footer/Footer";
 
 import {projects as data} from './data';
 
+import Loading from './components/Loading/Loading';
 
 class App extends Component {
   state = {
     projects: [],
     sortedProjects: [],
-    projectType: "all"
+    projectType: "all",
   };
 
   handleChange = e => {
@@ -56,6 +57,7 @@ class App extends Component {
 
   }
 
+
   componentDidMount(){
     const projects = [...data];
     
@@ -71,9 +73,10 @@ class App extends Component {
   render() {
     return (
       <>
+        <Loading />
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Start} />
+          <Route exact path="/" component={() => <Start />} />
           <Route exact path="/about" component={About} />
           <Route
             exact

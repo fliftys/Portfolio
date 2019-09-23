@@ -6,7 +6,7 @@ import { FaAlignRight } from "react-icons/fa";
 class Navbar extends Component {
 
   state = {
-    isMenuOpen: true
+    isMenuOpen: false
   }
 
   toggleMenu = () => {

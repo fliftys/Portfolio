@@ -13,8 +13,8 @@ const Start = () => {
     <>
       <Showcase className="start">
         <div className="container start__wrapper">
-          <Title content="Freelancer Front-end Developer" name="start__title" />
-          <Description content="Wdrożę twój projekt strony internetowej" />
+          <Title content="Freelancer Front-end Developer" name={`start__title`} />
+          <Description content="Wdrożę twój projekt strony internetowej" name={`start__description}`} />
           <div className="start__avatar">
             <img className="start__avatar-img" src={avatar} alt="avatar" />
           </div>
