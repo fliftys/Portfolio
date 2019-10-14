@@ -5,6 +5,7 @@ import challenge11 from './img/projects/challenge11.png';
 import memoryApp from './img/projects/memoryapp.png';
 import polind from './img/projects/polind.png';
 import portfolio from './img/projects/portfolio.png';
+import counsel from './img/projects/counsel.png';
 
 
 export const projects = [
@@ -67,6 +68,14 @@ export const projects = [
     urlGithub: 'https://github.com/fliftys/React-BikeShop',
     urlNetlify: 'https://serene-wright-c7a405.netlify.com/',
     img: bikeshop
+  },
+  {
+    id: 7,
+    name: 'Counsel',
+    type: 'ps',
+    urlGithub: 'https://github.com/fliftys/Counsel',
+    urlNetlify: 'https://romantic-yonath-70738a.netlify.com/',
+    img: counsel
   }
 
 
